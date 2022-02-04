@@ -1,0 +1,51 @@
+#slide{
+	position:relative;
+	overflow:hidden;
+	height:650px;
+}
+
+#slide ul{
+    display: flex;
+	position: absolute;
+    margin-right: 20px; /* 画像同士の余白は20px */
+	width:1200px;
+    top: 5%;
+}
+
+#slide li{
+	float:left;
+	width:300px;
+	list-style-type:none;
+}
+
+.slide-container{
+    position: relative;
+    display: block;
+}
+
+#prevBtn{
+	position:absolute;
+	top:50%;
+	left:10px;
+}
+
+#nextBtn {
+	position:absolute;
+	top:50%;
+	right:10px;
+}
+
+button{
+	opacity:.6;
+	transition:opacity .2s;
+	border:none;
+	background:none;
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	opacity:1;
+}

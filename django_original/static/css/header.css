@@ -1,0 +1,28 @@
+#menubar{
+    width:100%; }
+
+#menubar ul{
+    display:table;
+    width:100%;
+    margin: 0; 
+    padding: 0;
+    background-color: #FFFFFF; }
+
+#menubar li{
+    display: table-cell;
+    width:25%;
+    padding:0;
+    background-color: #8b8b8b; }
+
+#menubar li a{
+    display: block;
+    margin:0 auto;
+    padding:5px;
+    /* border: 1px solid #000000; */
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px; }
+    
+#menubar li a:hover{
+    background-color: #333333; }

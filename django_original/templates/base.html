@@ -26,6 +26,10 @@
                 <div class="image">
                     <img src="{% static 'picture/cuff.jpg' %}">
                     <p >PORTFOLIO SITE</p>
+                    <div class="speach-balloons-medium">
+                        <p1>お知らせ：</p1><br>
+                        <p3>最新のニュース</p3>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -88,11 +92,11 @@
                                     <li>学歴： 山口大学大学院創生科学研究科化学系専攻卒(2019/3)</li>
                                     <li>経歴： 自動車部品メーカー勤務（2019/4 〜 2022/1)</li>
                                     <li>言語： Swift, Python, C#, Html, CSS, JavaScript, jQuery, VBA</li>
-                                    <li>技能： ARkit, CoreML, Firebase、AWS, Django, Google Colab, Jyupiter Notebook, Unity</li>
+                                    <li>技能： ARkit, CoreML, Firebase, AWS, Django, Google Colab, Jyupiter Notebook, Unity</li>
                                     <li>資格： TOEIC720, 普通自動車免許</li>
                                     <li>希望職種： ソフトウェアエンジニア</li>
                                     <li>
-                                        自己PR： 完全独学でプログラミングを約年間学んできました。<br>エラーに対する粘り強さには自信があります。
+                                        自己PR： <br>　完全独学でプログラミングを約1年間学んできました。<br>　エラーに対する粘り強さには自信があります。
                                     </li>
                                 </ul>
                             </div>
@@ -102,13 +106,13 @@
             </div>
             <div class="contact-container"> 
                 <p >CONTACT</p>
-                <ul>
-                    <li><a href="ここにリンク先のURLを記入して下さい" ><img src="{% static 'picture/twitter.jpeg' %}" width="150" height="150" alt="twitter"></img></a></li>
-                    <li><a href="ここにリンク先のURLを記入して下さい" ><img src="{% static 'picture/twitter.jpeg' %}" width="150" height="150" alt="twitter"></img></a></li>
-                    <li><a href="ここにリンク先のURLを記入して下さい" ><img src="{% static 'picture/twitter.jpeg' %}" width="150" height="150" alt="twitter"></img></a></li>
-                    <!-- <li>年齢： 27歳</li>
-                    <li>出身： 広島県</li> -->
-                </ul>
+                <div id="Tooltip">
+                    <ul>
+                        <li><a href="#"><img src="{% static 'picture/twitter.jpeg' %}" alt="twitter"></img></a></li>
+                        <li><a href="#"><img src="{% static 'picture/github.png' %}" alt="github"></img></a></li>
+                        <li><a href="#" ><img src="{% static 'picture/mail.jpg' %}" alt="mail"></img></a></li>
+                    </ul>
+                </div>
             </div>
             <selection>
                 <!-- <p id="output"></p> -->
@@ -143,10 +147,8 @@
                         function(){
                             $(this).append($("#slide li:first-child"));
                             $(this).css("left", -300);
-                            
                         });
                     }else{
-
                         // 画像1枚分右へスクロール
                         $("#slide ul").animate({"left" : "+=300px"}, duration, 
                         function(){
@@ -162,23 +164,51 @@
                     dir = 1;
                     clearInterval(timer);
                     timer = setInterval(slideTimer, interval);
-                    // 初回の関数実行
                     slideTimer();
                 });
                     // 次へ進むボタン
                 $("#nextBtn").click(function(){
                     // スクロール方向の切り替え（左）
                     dir = -1;
-                    // タイマーを停止して再スタート
                     clearInterval(timer);
                     timer = setInterval(slideTimer, interval);
-                    // 初回の関数実行
                     slideTimer();
                 });
             });
         </script>
+        <script>
+            $(function(){
+                $("#Tooltip ul li a").hover(function(){
 
+                    var window_w = window.innerWidth;
+                    // var window_h = window.innerHeight;
+                    console.log(window_w);
+                    // console.log(window_h);
+
+                    var lefOffsetPos = $(this).offset().left
+
+                    var topPos = $(this).position().top;
+                    var leftPos = $(this).position().left
+                    var rightPos = $(this).position().right
+                    var bottomPos = $(this).position().botton
+
+                    $(".contact-container").append('<div id="tooltip"><p></p></div>');
+                    $("#tooltip p").html($(this).children().attr("alt"));
+                    $("#tooltip").css("bottom", topPos  + 150);
+                    $("#tooltip").css("left", lefOffsetPos - 35);
+                    $("#tooltip").fadeIn();
+                }, 
+                function(){
+                    $("#tooltip").remove();
+                });
+            });
+        </script>
         <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+        <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+        <link rel="stylesheet" href="{% static 'css/site.css' %}">
+        <link rel="stylesheet" href="{% static 'css/slider.css' %}">
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>

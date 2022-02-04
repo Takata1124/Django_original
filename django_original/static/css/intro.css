@@ -1,0 +1,40 @@
+.colcol {
+    /* top: 25px; */
+    /* background: rgb(248, 226, 80); */
+    width: 50%;
+    height: 650px;
+    /* margin: 25px; */
+    /* margin-left: 0%; */
+    background-color: #8b8b8b;
+}
+
+.colcol p{
+    position: relative;
+    top: 5%;
+    left: 0%;
+    width:200px;
+    color: #000000; 
+    font-size:60px; 
+    text-align: left;
+}
+
+div.image_circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    background-image: url("https://cdn.pixabay.com/photo/2018/07/25/02/53/woman-3560573_960_720.jpg");
+    background-position: 50% 50%;
+    top:25%;
+	left:30%;
+    border: 1px solid #000000;
+}
+
+.introText {
+    font-size: 72px; 
+}
+
+#introbar ul li{
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
