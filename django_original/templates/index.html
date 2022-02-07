@@ -1,1 +1,120 @@
-<h1>hello</h1>
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+        <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+        <link rel="stylesheet" href="{% static 'css/site.css' %}">
+        <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+        <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'css/privacy.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+        <script src="{% static 'js/sample.js' %}"></script>
+        <title>PORTFOLIO</title>
+    </head>
+    <body >
+
+        {% include './header.html' %}
+
+        <main>
+            <div class="name_container">
+                <p class="app_name"><b>アプリ名：ARオセロ</b></p>
+            </div>
+            <div class="privacy-policy">
+                <p class="title_name"><b>取扱説明書</b></p>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の取得]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の利用]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の第三者提供]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人上を第三者に提供することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
+                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
+                </div>
+            </div>
+            <div class="privacy-policy">
+                <p class="title_name"><b>利用規約</b></p>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の取得]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の利用]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の第三者提供]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人上を第三者に提供することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
+                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
+                </div>
+            </div>
+            <div class="privacy-policy">
+                <p class="title_name"><b>プライバシーポリシー</b></p>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[はじめに]</b></p>
+                    <p class="privacy-policy__item__desc">ARオセロ(以下、本アプリ)において、個人情報の取扱について、下記基本原則を遵守するとともに、ユーザー様におかれましては、本アプリのご利用に伴い、本規約に同意したものとみなします。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の取得]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の利用]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[利用者情報の第三者提供]</b></p>
+                    <p class="privacy-policy__item__desc">本アプリが利用者の個人上を第三者に提供することはありません。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[適用範囲]</b></p>
+                    <p class="privacy-policy__item__desc">当プライバシーポリシーは本サービスにのみ適用されます。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[セキュリティ]</b></p>
+                    <p class="privacy-policy__item__desc">当社は個人情報の安全性確保のために、セキュリティに万全の対策を講じます。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[法令、規範の順守と見直し]</b></p>
+                    <p class="privacy-policy__item__desc">当社は個人情報に関して適用される法令、その他規範を遵守するとともに、本ポリシー内容を適宜見直し、その改善に努めます。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[免責事項]</b></p>
+                    <p class="privacy-policy__item__desc">当社は提供するアプリについて細心の注意を払っておりますが、正確性、有用性、安全性、及び最新性を含め、いかなる保証をするものではありません。アプリのご利用によって発生した直接、あるいは間接の損失、損害等に対して、当社いかなる責任も負わないものとします。</p>
+                </div>
+                <div class="privacy-policy__item">
+                    <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
+                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
+                </div>
+            </div>
+            <div class="blank-container"></div>
+
+        </main>
+
+        {% include './footer.html' %}
+        
+    </body>
+</html>
+
+
+
+        

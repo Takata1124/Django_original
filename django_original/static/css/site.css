@@ -1,7 +1,7 @@
 .image img {
 	display: block;
 	width: 100%;
-	height: 650px;
+	height: 550px;
 }
 
 .sample-box {
@@ -12,9 +12,9 @@
     position: absolute;
     top: 5%;
     left: 52%;
-    width: 200px;
+    width: 50%;
     color: #000000; 
-    font-size: 60px; 
+    font-size: 50px; 
     text-align: left;
 }
 
@@ -29,7 +29,7 @@
     height: 300px;
     padding: 5px;
     color: rgb(0, 0, 0);
-    background-color: #cde4ff;/*背景色*/
+    background-color: #ffffff;/*背景色*/
     border-radius: 5%; 
     align-items: center
 }
@@ -42,7 +42,7 @@
     height: 0;
     left: 100%;
     top: 62%;
-    border-right: 30px solid #cde4ff;/*背景色*/
+    border-right: 30px solid #ffffff;/*背景色*/
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     transform: rotate( 180deg);

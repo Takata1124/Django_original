@@ -1,21 +1,19 @@
 .contact-container {
     position: relative;
-    /* top:50px; */
-    /* display: block; */
 	width: 100%;
-    height: 350px;
-    background: rgb(255, 172, 37);
+    height: 300px;
+    background: #8b8b8b; 
     text-align: center;
     margin: auto;
 }
 
 .contact-container p {
     position: relative;
-    top: 5%;
+    top: 0%;
     left: 52%;
     width: 500px;
     color: #000000; 
-    font-size: 60px; 
+    font-size: 50px; 
     text-align: left;
 }
 
@@ -52,7 +50,7 @@
 	border-radius: 10px;
 	background:#FFF;
     /* border: 1px solid #000000; */
-	background: #cde4ff;/*背景色*/
+	background: #ffffff;/*背景色*/
     width: 200px;
     height: 40px;
 }
@@ -69,7 +67,7 @@
 #tooltip:after{
 	content:" ";
 	width:0px;
-	border-top:18px solid #cde4ff;/*背景色*/
+	border-top:18px solid #ffffff;/*背景色*/
 	border-left:8px solid transparent;
 	border-right:8px solid transparent;
 	position:relative;
