@@ -5,7 +5,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/sample.css' %}">
@@ -30,41 +30,42 @@
                 <p class="app_name"><b>アプリ名：ARオセロ</b></p>
             </div>
             <div class="privacy-policy">
-                <p class="title_name"><b>取扱説明書</b></p>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の取得]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の利用]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の第三者提供]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人上を第三者に提供することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
-                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
-                </div>
-            </div>
-            <div class="privacy-policy">
-                <p class="title_name"><b>利用規約</b></p>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の取得]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の利用]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人情報を取得することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[利用者情報の第三者提供]</b></p>
-                    <p class="privacy-policy__item__desc">本アプリが利用者の個人上を第三者に提供することはありません。</p>
-                </div>
-                <div class="privacy-policy__item">
-                    <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
-                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
+                <p class="title_name"><b>取扱説明</b></p>
+                <div class="row">
+                    <div class="instruct-column-text">
+                        <!-- <img src="{% static 'picture/titleScreen.PNG' %}"></img> -->
+                        <div class="privacy-policy__item">
+                            <p class="privacy-policy__item__title"><b>[はじめに]</b></p>
+                            <p class="privacy-policy__item__desc">本プリケーションを初めて使用する際、アプリケーションの性質上、カメラへのアクセス許可が必要となります。カメラを通した個人情報の取得等ございませんので、本アプリケーションを使用する際にはアクセスの許可をお願いいたします。</p>
+                            <p class="privacy-policy__item__title"><b>[ゲームの始め方(タイトル画面)]</b></p>
+                            <p class="privacy-policy__item__desc">画面下部にあるボタンより、始めるゲームのモードを選択します。</p>
+                                <ul>
+                                    <li>シングルモード(弱い)：比較的弱いCPU(COMPUTER)との対戦を始めます。</Li>
+                                    <li>シングルモード(少し強い)：比較的強いCPU(COMPUTER)との対戦を始めます。</Li>
+                                    <li>対戦モード：対人での対戦を始めます(現在実装中)</Li>
+                                </ul>
+                            <p class="privacy-policy__item__desc">画面右上部のボタンより本ページにアクセスできます。</p>
+                            <p class="privacy-policy__item__title"><b>[ゲームの進め方(対戦画面)]</b></p>
+                            <p class="privacy-policy__item__desc">下記ゲームの流れを示します。</p>
+                                <ol>
+                                    <li>画面右上部のスイッチボタンより、黒または白を選択肢し、自分のオセロの色を決めます。</Li>
+                                    <li>画面の中心部を平面部に合わせることで写真2のような矢印が表示されるますので、表示されている状態で、画面下部のSetupボタンを押し、オセロ板を表示させます。</Li>
+                                    <li>自分がオセロを置く場所は、写真2のように濃い赤い色のタイルで表示されます。置く場所に問題なければ、画面下部のothelloボタンを押してください。また、置く場所は画面を動かして矢印を移動させることで変更できます。(注意；オセロ置ける場所がなかった場合、濃い赤いタイルが表示されませんので、その際は、画面下部のpassボタンを押してください)</Li>
+                                    <li>以降、CPUと交互にオセロを置いていき、置ける場所がなくなる場合、どちらかのオセロが全てひっくり返された場合、お互いオセロが置けなくなる状態になるまで、上記3の操作をおこなます。</li>
+                                    <li>最終的に勝者のオセロの色と各オセロの数がゲーム上に表示されます。</li>
+                                </ol>
+                            <p class="privacy-policy__item__desc">※画面左上の矢印ボタンを押すことでタイトル画面に戻り、いつでもゲームを中断できます。</p>
+                        </div>
+                    </div>
+                    <div class="instruct-column">
+                        <img src="{% static 'picture/titleScreen.PNG' %}"></img>
+                        <h5>写真1. タイトル画面</h5>
+                    </div>
+                    <div class="instruct-column">
+                        <img src="{% static 'picture/battleScreen.PNG' %}"></img>
+                        <h5>写真2. 対戦画面</h5>
+                    </div>
+
                 </div>
             </div>
             <div class="privacy-policy">
@@ -103,7 +104,8 @@
                 </div>
                 <div class="privacy-policy__item">
                     <p class="privacy-policy__item__title"><b>[お問い合わせ先]</b></p>
-                    <p class="privacy-policy__item__desc">「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，</p>
+                    <p class="privacy-policy__item__desc">何かご不明な点があれば下記問い合わせフォームより問い合わせください。</p>
+                    <a href="/contact">問い合わせフォーム</a>
                 </div>
             </div>
             <div class="blank-container"></div>

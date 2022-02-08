@@ -1,35 +1,77 @@
-.privacy-container {
-    position: relative;
-	width: 100%;
-    height: 300px;
-    background: rgb(189, 236, 138);
-    text-align: center;
-    margin: auto;
+
+@media screen and (min-width: 400px) {
+
+    .privacy-container {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        background: rgb(189, 236, 138);
+        text-align: center;
+        margin: auto;
+    }
+
+    .privacyCol {
+        position: relative;
+        width: 100%;
+    }
+
+    .privacyCol p{
+        position: relative;
+        top: 5%;
+        left: 0%;
+        width: 100%;
+        color: #000000; 
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    #infobar ul {
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    
+    #infobar ul li{
+        padding-top: 5px; 
+        padding-bottom: 5px;
+    }
 }
 
-.privacyCol {
-    position: relative;
-    width: 50%;
+@media screen and (min-width: 1025px) {
 
+    .privacy-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: rgb(189, 236, 138);
+        text-align: center;
+        margin: auto;
+    }
+    
+    .privacyCol {
+        position: relative;
+        width: 50%;
+    
+    }
+    
+    .privacyCol p{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 500px;
+        color: #000000; 
+        font-size: 50px; 
+        text-align: left;
+    }
+    
+    #infobar ul {
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    
+    #infobar ul li{
+        padding-top: 10px; 
+        padding-bottom: 5px;
+    }
 }
 
-.privacyCol p{
-    position: relative;
-    top: 0%;
-    left: 0%;
-    width: 500px;
-    color: #000000; 
-    font-size: 50px; 
-    text-align: left;
-}
-
-#infobar ul {
-    padding-top:5px;
-    padding-bottom:5px;
-}
-
-#infobar ul li{
-    padding-top: 10px; 
-    padding-bottom: 5px;
-}
 

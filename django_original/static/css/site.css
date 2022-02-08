@@ -1,49 +1,131 @@
-.image img {
-	display: block;
-	width: 100%;
-	height: 550px;
+@media screen and (min-width: 400px) {
+
+    .image img {
+        display: block;
+        width: 100%;
+        height: 350px;
+    }
+
+    .sample-box {
+        position: relative;
+    }
+    
+    .sample-box p {
+        position: absolute;
+        top: 5%;
+        /* left: 52%; */
+        width: 100%;
+        color: #000000; 
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    .speach-balloons-medium {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        width: 50%;
+        color: #000000; 
+        font-size: 30px; 
+        text-align: left;
+        height: 150px;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        border-radius: 5%; 
+        align-items: center
+    }
+    
+    .speach-balloons-medium::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        left: 100%;
+        top: 62%;
+        border-right: 30px solid #ffffff;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        transform: rotate( 180deg);
+    }
+
+    .speach-balloons-medium h5{
+
+        font-size: 14px;
+    } 
+
+    .speach-balloons-medium h6{
+
+        font-size: 14px;
+    } 
 }
 
-.sample-box {
-    position: relative;
+@media screen and (min-width: 1025px) {
+
+    .image img {
+        display: block;
+        width: 100%;
+        height: 550px;
+    }
+    
+    .sample-box {
+        position: relative;
+    }
+    
+    .sample-box p {
+        position: absolute;
+        top: 5%;
+        left: 52%;
+        width: 50%;
+        color: #000000; 
+        font-size: 50px; 
+        text-align: left;
+    }
+    
+    .speach-balloons-medium {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 35%;
+        color: #000000; 
+        font-size: 30px; 
+        text-align: left;
+        height: 300px;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;/*背景色*/
+        border-radius: 5%; 
+        align-items: center
+    }
+    
+    .speach-balloons-medium::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        left: 100%;
+        top: 62%;
+        border-right: 30px solid #ffffff;/*背景色*/
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        transform: rotate( 180deg);
+    }
+
+    .speach-balloons-medium h5{
+        
+        font-size: 24px;
+    }
+
+    .speach-balloons-medium h6{
+        
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
 }
 
-.sample-box p {
-    position: absolute;
-    top: 5%;
-    left: 52%;
-    width: 50%;
-    color: #000000; 
-    font-size: 50px; 
-    text-align: left;
-}
 
-.speach-balloons-medium {
-    position: absolute;
-    top: 35%;
-    left: 25%;
-    width: 35%;
-    color: #000000; 
-    font-size: 30px; 
-    text-align: left;
-    height: 300px;
-    padding: 5px;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;/*背景色*/
-    border-radius: 5%; 
-    align-items: center
-}
 
-.speach-balloons-medium::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    left: 100%;
-    top: 62%;
-    border-right: 30px solid #ffffff;/*背景色*/
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-    transform: rotate( 180deg);
-}
+
