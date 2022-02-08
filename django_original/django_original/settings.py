@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import environ
 import yaml
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -19,15 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
-DEBUG = True
+env = environ.Env()
+env.read_env(os.path.join(BASE_DIR, 'secrets', '.env'))
+DEBUG = env('DEBUG')
 
-if DEBUG:
-    with open(os.path.join(BASE_DIR, 'secrets', 'secret_dev.yaml')) as file:
-        objs = yaml.safe_load(file)
-        for obj in objs:
-            os.environ[obj] = objs[obj]
-else:
-    pass
+with open(os.path.join(BASE_DIR, 'secrets', 'secret_dev.yaml')) as file:
+    objs = yaml.safe_load(file)
+    for obj in objs:
+        os.environ[obj] = objs[obj]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
