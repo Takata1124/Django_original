@@ -1,9 +1,9 @@
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
 
 	.contact-container {
 		position: relative;
 		width: 100%;
-		height: 250px;
+		height: 150px;
 		background: #8b8b8b; 
 		text-align: center;
 		margin: auto;
@@ -36,8 +36,8 @@
 	
 	#Tooltip ul li img {
 		border-radius: 50%;
-		width:125px;
-		height:125px;
+		width:50px;
+		height:50px;
 		background:#FFF;
 	}
 	

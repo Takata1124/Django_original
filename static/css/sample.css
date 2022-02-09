@@ -25,5 +25,105 @@
     text-align: left;
     width: 100%;
     padding-right: 30px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 300px) {
+
+    .main {
+        width: 100%;
+    }
+    
+    #wrapper{
+        position: relative;
+        width:75%;
+        margin:0 auto;
+        background: rgb(248, 189, 52);
+    }
+    
+    #wrapper-col {
+        position: relative;
+        top: 25px;
+        height: 650px;
+        background: rgb(248, 189, 52);
+    }
+    
+    .box3 {
+        margin-left: 0px;
+        /* margin-right: 30px; */
+        margin-top: 40px; 
+        color: #2c2c2f;
+        /* background: #ffffff;背景色 */
+        text-align: left;
+        width: 100%;
+        padding-right: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 10250px) {
+
+    .main {
+        width: 100%;
+    }
+    
+    #wrapper{
+        position: relative;
+        width:75%;
+        margin:0 auto;
+        background: rgb(248, 189, 52);
+    }
+    
+    #wrapper-col {
+        position: relative;
+        top: 25px;
+        height: 650px;
+        background: rgb(248, 189, 52);
+    }
+    
+    .box3 {
+        margin-left: 0px;
+        /* margin-right: 30px; */
+        margin-top: 40px; 
+        color: #2c2c2f;
+        /* background: #ffffff;背景色 */
+        text-align: left;
+        width: 100%;
+        padding-right: 30px;
+        font-size: 12px;
+    }
+    
+    @media screen and (min-width: 300px) {
+    
+        .main {
+            width: 100%;
+        }
+        
+        #wrapper{
+            position: relative;
+            width:75%;
+            margin:0 auto;
+            background: rgb(248, 189, 52);
+        }
+        
+        #wrapper-col {
+            position: relative;
+            top: 25px;
+            height: 650px;
+            background: rgb(248, 189, 52);
+        }
+        
+        .box3 {
+            margin-left: 0px;
+            /* margin-right: 30px; */
+            margin-top: 40px; 
+            color: #2c2c2f;
+            /* background: #ffffff;背景色 */
+            text-align: left;
+            width: 100%;
+            padding-right: 30px;
+            font-size: 14px;
+        }
+    }
 }
 

@@ -1,3 +1,40 @@
+@media screen and (min-width: 300px) {
+
+    .name_container {
+
+        font-size: 15px;
+        padding: auto;
+        text-align: center;
+
+        margin-top: 15px;
+        background-color: #e5e5e5;
+    }
+
+    .title_name {
+
+        text-align: center;
+        font-size:15px; 
+        background-color: #e5e5e5;
+    }
+    
+    .instruct-column {
+        position: relative;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .instruct-column h5 {
+
+        padding-top: 10px;
+        font-size:15px; 
+    }
+
+    .privacy-policy__item {
+        font-size: 12px;
+    }
+}
+
+
 @media screen and (min-width: 1025px) {
 
     .privacy-policy {
@@ -73,39 +110,4 @@
     }
 }
 
-@media screen and (min-width: 400px) {
-
-    .name_container {
-
-        font-size: 15px;
-        padding: auto;
-        text-align: center;
-
-        margin-top: 15px;
-        background-color: #e5e5e5;
-    }
-
-    .title_name {
-
-        text-align: center;
-        font-size:15px; 
-        background-color: #e5e5e5;
-    }
-    
-    .instruct-column {
-        position: relative;
-        padding-bottom: 20px;
-        text-align: center;
-    }
-
-    .instruct-column h5 {
-
-        padding-top: 10px;
-        font-size:15px; 
-    }
-
-    .privacy-policy__item {
-        font-size: 12px;
-    }
-}
 

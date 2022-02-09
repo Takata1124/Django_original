@@ -1,9 +1,9 @@
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
 
     .intro-container {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 750px;
         background: rgb(253, 196, 105);
         text-align: center;
         margin: auto;
