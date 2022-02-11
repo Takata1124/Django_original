@@ -22,7 +22,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 env = environ.Env()
 env.read_env(os.path.join(BASE_DIR, '.env'))
-DEBUG = env('DEBUG')
+DEBUG = False
 
 with open(os.path.join(BASE_DIR, 'secrets', 'secret_dev.yaml')) as file:
     objs = yaml.safe_load(file)
@@ -38,7 +38,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['35.74.175.166']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 # Application definition
 
